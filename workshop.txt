@@ -1,0 +1,6 @@
+version=1.0
+title=Dirtiness Sickness
+description=Waiting for description upload.
+description=Workshop ID: ?
+description=Mod ID: DirtinessSickness
+visibility=public

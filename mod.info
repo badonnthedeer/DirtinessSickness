@@ -1,0 +1,6 @@
+name=DirtinessSickness
+poster=poster.png
+id=DirtinessSickness
+description=A customizable mod that adds a moodle representing player hygiene. Can add sickness if too low!
+require=MoodleFramework
+url=https://github.com/badonnthedeer/DirtinessSickness
