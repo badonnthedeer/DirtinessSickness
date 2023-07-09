@@ -1,6 +1,23 @@
-version=1.0
+version=1
+id=3001306950
 title=Dirtiness Sickness
-description=Waiting for description upload.
-description=Workshop ID: 3001306950
-description=Mod ID: DirtinessSickness
+description=Adds a moodle representing player hygiene. If dirty for too long, you might get sick!
+description=
+description=Allows for customization in
+description=[list]
+description=[*] Sickness Gain
+description=[*] Sickness Gain Chance
+description=[*] Moodle Thresholds
+description=[*] and More!
+description=[/list]
+description=
+description=[hr][/hr]
+description=[h1]A message from the creator[/h1]
+description=Do you really enjoy this mod--or even better--want to build on it? Please consider [url=https://ko-fi.com/badonnthedeer]donating to me[/url] so I can pay my bills. I'm recently unemployed and every little bit helps!
+description=
+description=[h1]Special Thanks[/h1]
+description=to RU556 for commissioning this mod!
+description=
+description=[quote=Badonn]Please don't copy this mod and upload it as your own! Please also ask if you can use this in a mod pack. If you would like to translate the mod, send me a message or leave a comment and I'll work with you to add it in! This mod is under the MIT License.[/quote]
+tags=Build 41;Hardmode;Misc;Multiplayer;Realistic
 visibility=public
