@@ -25,38 +25,38 @@ option DirtinessSickness.LowThreshold
     type = double, min = 0.75, max = 1.0, default = 0.75,
 	page = DirtinessSickness, translation = DirtinessSickness_LowThreshold,
 }
-option DirtinessSickness.LowFeverChancePerHour
+option DirtinessSickness.LowSickChancePerHour
 {
 	type = double, min = 0.00, max = 1.0, default = 0.00,
-	page = DirtinessSickness, translation = DirtinessSickness_LowFeverChancePerHour,
+	page = DirtinessSickness, translation = DirtinessSickness_LowSickChancePerHour,
 }
 option DirtinessSickness.MediumThreshold
 {
     type = double, min = 0.50, max = 0.74, default = 0.50,
 	page = DirtinessSickness, translation = DirtinessSickness_MediumThreshold,
 }
-option DirtinessSickness.MediumFeverChancePerHour
+option DirtinessSickness.MediumSickChancePerHour
 {
 	type = double, min = 0.00, max = 1.0, default = 0.03,
-	page = DirtinessSickness, translation = DirtinessSickness_MediumFeverChancePerHour,
+	page = DirtinessSickness, translation = DirtinessSickness_MediumSickChancePerHour,
 }
 option DirtinessSickness.HighThreshold
 {
 	type = double, min = 0.25, max = 0.49, default = 0.25,
 	page = DirtinessSickness, translation = DirtinessSickness_HighThreshold,
 }
-option DirtinessSickness.HighFeverChancePerHour
+option DirtinessSickness.HighSickChancePerHour
 {
 	type = double, min = 0.00, max = 1.0, default = 0.10,
-	page = DirtinessSickness, translation = DirtinessSickness_HighFeverChancePerHour,
+	page = DirtinessSickness, translation = DirtinessSickness_HighSickChancePerHour,
 }
 option DirtinessSickness.CriticalThreshold
 {
 	type = double, min = 0.00, max = 0.24, default = 0.04,
 	page = DirtinessSickness, translation = DirtinessSickness_CriticalThreshold,
 }
-option DirtinessSickness.CriticalFeverChancePerHour
+option DirtinessSickness.CriticalSickChancePerHour
 {
 	type = double, min = 0.00, max = 1.0, default = 0.14,
-	page = DirtinessSickness, translation = DirtinessSickness_CriticalFeverChancePerHour,
+	page = DirtinessSickness, translation = DirtinessSickness_CriticalSickChancePerHour,
 }

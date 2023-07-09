@@ -128,25 +128,25 @@ DirtinessSickness.DSEveryHours = function()
                     moodle:doWiggle();
                     if moodleLevel == 4
                     then
-                        if rolledChance <= sbv.CriticalFeverChancePerHour
+                        if rolledChance <= sbv.CriticalSickChancePerHour
                         then
                             player:getBodyDamage():setFoodSicknessLevel(DirtinessSickness.getNewFoodSicknessValue(player));
                         end
                     elseif moodleLevel == 3
                     then
-                        if rolledChance <= sbv.HighFeverChancePerHour
+                        if rolledChance <= sbv.HighSickChancePerHour
                         then
                             player:getBodyDamage():setFoodSicknessLevel(DirtinessSickness.getNewFoodSicknessValue(player));
                         end
                     elseif moodleLevel == 2
                     then
-                        if rolledChance <= sbv.MediumFeverChancePerHour
+                        if rolledChance <= sbv.MediumSickChancePerHour
                         then
                             player:getBodyDamage():setFoodSicknessLevel(DirtinessSickness.getNewFoodSicknessValue(player));
                         end
                     elseif moodleLevel == 1
                     then
-                        if rolledChance <= sbv.LowFeverChancePerHour
+                        if rolledChance <= sbv.LowSickChancePerHour
                         then
                             player:getBodyDamage():setFoodSicknessLevel(DirtinessSickness.getNewFoodSicknessValue(player));
                         end
