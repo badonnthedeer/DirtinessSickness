@@ -29,13 +29,18 @@ local DirtinessSickness = {};
 
 DirtinessSickness.getNewFoodSicknessValue = function(player)
     local sbv =  SandboxVars.DirtinessSickness;
-    local setValue = sbv.SetSicknessLevel;
-    if setValue == true
+    local cap = sbv.SicknessCap;
+    local increaseAmt = sbv.IncreaseSicknessAmt
+    local sicknessLevel = player:getBodyDamage():getFoodSicknessLevel();
+    if sicknessLevel >= cap
     then
-        return sbv.SetSicknessLevelAmt
+        --if someone has a higher Food Sickness already, just return that and don't modify it.
+        return sicknessLevel;
     else
-        return (math.min((player:getBodyDamage():getFoodSicknessLevel() + sbv.IncreaseSicknessLevelAmt), 100))
+        --else add increaseAmt to Food Sickness and return that (or that cap if said amount would be larger.)
+        return (math.min((sicknessLevel + increaseAmt), sbv.SicknessCap))
     end
+
 end
 
 DirtinessSickness.setMoodleValue = function(player, value)
