@@ -7,12 +7,12 @@ option DirtinessSickness.DecreasePerHour
 }
 option DirtinessSickness.DirtinessToTickUp
 {
-    type = double, min = 0.01, max = 17, default = 7,
+    type = double, min = 0.01, max = 17, default = 1,
     page = DirtinessSickness, translation = DirtinessSickness_DirtinessToTickUp,
 }
 option DirtinessSickness.IncreaseSicknessAmt
 {
-    type = double, min = 0, max = 100, default = 95,
+    type = double, min = 0, max = 100, default = 50,
     page = DirtinessSickness, translation = DirtinessSickness_IncreaseSicknessAmt,
 }
 option DirtinessSickness.SicknessCap
