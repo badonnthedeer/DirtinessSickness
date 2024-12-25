@@ -49,6 +49,7 @@
 ------------------------------------------------------------------------------------------------------
 
 require "MF_ISMoodle"
+TAB = require("fol_Take_A_Bath");
 local DirtinessSickness = {};
 
 -- C:\Program Files (x86)\Steam\steamapps\common\ProjectZomboid\media\lua | Project Zomboid files
@@ -233,6 +234,17 @@ ISWashYourself.stop = function(self)
         end
     end
 end
+
+if getActivatedMods():contains("fol_Take_A_Bath")
+then
+    local origTakeABathActionPerform = Fol_Take_A_Bath_TUB_Action.perform
+    Fol_Take_A_Bath_TUB_Action.perform = function(self)
+        origTakeABathActionPerform(self);
+        DirtinessSickness.setMoodleValue(self.character, 1.0);
+    end
+end
+
+
 --[[ unnecessary since ending bath early doesn't clean you at all.
 local origTakeABathActionStop = Fol_Take_A_Bath_TUB_Action.stop
 Fol_Take_A_Bath_TUB_Action.stop = function(self)
