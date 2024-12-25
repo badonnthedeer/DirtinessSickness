@@ -94,7 +94,7 @@ DirtinessSickness.getNewFoodSicknessValue = function(player)
 end
 
 DirtinessSickness.setMoodleValue = function(player, value)
-    local moodle = MF.getMoodle("DirtinessSickness");
+    local moodle = MF.getMoodle("DirtinessSickness", player:getPlayerNum());
     local modData = player:getModData().DirtinessSickness
 
     if modData ~= nil
@@ -111,7 +111,7 @@ DirtinessSickness.createMoodle = function(player)
     --don't use the regular create in moodle framework because it conflicts with trying to customize stuff
     MF.ISMoodle:new("DirtinessSickness", player)
 
-    local moodle = MF.getMoodle("DirtinessSickness");
+    local moodle = MF.getMoodle("DirtinessSickness", player:getPlayerNum());
     local sbv =  SandboxVars.DirtinessSickness;
 
     moodle:setThresholds(sbv.CriticalThreshold, sbv.HighThreshold, sbv.MediumThreshold, sbv.LowThreshold, nil, nil, nil, nil);
@@ -122,7 +122,7 @@ DirtinessSickness.createMoodleWithValue = function(player, value)
     --don't use the regular create in moodle framework because it conflicts with trying to customize stuff
     MF.ISMoodle:new("DirtinessSickness", player)
 
-    local moodle = MF.getMoodle("DirtinessSickness");
+    local moodle = MF.getMoodle("DirtinessSickness", player:getPlayerNum());
     local sbv =  SandboxVars.DirtinessSickness;
 
     moodle:setThresholds(sbv.CriticalThreshold, sbv.HighThreshold, sbv.MediumThreshold, sbv.LowThreshold, nil, nil, nil, nil);
@@ -156,7 +156,7 @@ DirtinessSickness.DSEveryHours = function()
             local sbv = SandboxVars.DirtinessSickness
             local visual = player:getHumanVisual();
             local totalDirtiness = 0;
-            local moodle = MF.getMoodle("DirtinessSickness");
+            local moodle = MF.getMoodle("DirtinessSickness", player:getPlayerNum());
             if moodle ~= nil
             then
                 local moodleLevel = moodle:getLevel();
@@ -218,6 +218,7 @@ ISWashYourself.stop = function(self)
     origWashSelfStop(self)
     local sbv = SandboxVars.DirtinessSickness
     local moodle = MF.getMoodle("DirtinessSickness");
+    local moodle = MF.getMoodle("DirtinessSickness", self.character:getPlayerNum());
     if moodle ~= nil
     then
         local visual = self.character:getHumanVisual();
@@ -233,6 +234,27 @@ ISWashYourself.stop = function(self)
         end
     end
 end
+--[[ unnecessary since ending bath early doesn't clean you at all.
+local origTakeABathActionStop = Fol_Take_A_Bath_TUB_Action.stop
+Fol_Take_A_Bath_TUB_Action.stop = function(self)
+    origTakeABathActionStop(self)
+    local sbv = SandboxVars.DirtinessSickness
+    local moodle = MF.getMoodle("DirtinessSickness", self.character:getPlayerNum());
+    if moodle ~= nil
+    then
+        local visual = self.character:getHumanVisual();
+        local totalDirtiness = 0;
+
+        for i = 0, BloodBodyPartType.MAX:index()-1 do
+            local bloodBodyPartType = BloodBodyPartType.FromIndex(i)
+            totalDirtiness = totalDirtiness + visual:getDirt(bloodBodyPartType);
+        end
+        if totalDirtiness < (sbv.DirtinessToTickUp)
+        then
+            DirtinessSickness.setMoodleValue(self.character, 1.0);
+        end
+    end
+end]]
 
 Events.OnCreatePlayer.Add(DirtinessSickness.DSPlayerCreate);
 Events.OnSave.Add(DirtinessSickness.DSSave);
