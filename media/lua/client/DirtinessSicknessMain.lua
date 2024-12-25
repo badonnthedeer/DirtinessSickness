@@ -217,7 +217,6 @@ local origWashSelfStop = ISWashYourself.stop
 ISWashYourself.stop = function(self)
     origWashSelfStop(self)
     local sbv = SandboxVars.DirtinessSickness
-    local moodle = MF.getMoodle("DirtinessSickness");
     local moodle = MF.getMoodle("DirtinessSickness", self.character:getPlayerNum());
     if moodle ~= nil
     then
