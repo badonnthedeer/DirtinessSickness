@@ -202,6 +202,9 @@ DirtinessSickness.DSEveryHours = function()
                             player:getBodyDamage():setFoodSicknessLevel(DirtinessSickness.getNewFoodSicknessValue(player));
                         end
                     end
+                else
+                    --failsafe for other methods of getting clean
+                    DirtinessSickness.setMoodleValue(player, 1.0);
                 end
             end
         end
