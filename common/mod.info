@@ -1,0 +1,6 @@
+name=DirtinessSickness
+poster=poster.png
+id=DirtinessSickness
+description=A customizable mod that adds a moodle representing player hygiene. You can get sick if too dirty for too long!
+require=\MoodleFramework
+url=https://github.com/badonnthedeer/DirtinessSickness
