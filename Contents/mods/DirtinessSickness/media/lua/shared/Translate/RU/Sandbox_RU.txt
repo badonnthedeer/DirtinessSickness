@@ -1,4 +1,4 @@
-Sandbox_RUS = {
+Sandbox_RU = {
 	Sandbox_DirtinessSickness  = "болезнь от грязноты",
     Sandbox_DirtinessSickness_DecreasePerHour = "уменьшение в час",
     Sandbox_DirtinessSickness_DecreasePerHour_tooltip = "количество в час,до котрого мудл приходит в норму\nначальное значение 1.0, 0.0 наименьшее.",

@@ -1,4 +1,4 @@
-Moodles_RUS {
+Moodles_RU {
     Moodles_DirtinessSickness_Bad_lvl1 = "грязный",
     Moodles_DirtinessSickness_Bad_desc_lvl1 = "запущенный неряха.",
     Moodles_DirtinessSickness_Bad_lvl2 = "Filthy",
