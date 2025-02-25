@@ -18,7 +18,7 @@ option DirtinessSickness.IncreasePoisonAmt
 option DirtinessSickness.PoisonCap
 {
     type = double, min = 0, max = 100, default = 40,
-    page = DirtinessSickness, translation = DirtinessSickness_SicknessCap,
+    page = DirtinessSickness, translation = DirtinessSickness_PoisonCap,
 }
 option DirtinessSickness.LowThreshold
 {
