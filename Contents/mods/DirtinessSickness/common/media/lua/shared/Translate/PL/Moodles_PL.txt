@@ -2,9 +2,9 @@ Moodles_PL {
     Moodles_DirtinessSickness_Bad_lvl1 = "Brudny",
     Moodles_DirtinessSickness_Bad_desc_lvl1 = "Nieprzyjemnie brudny.",
     Moodles_DirtinessSickness_Bad_lvl2 = "Bardzo brudny",
-    Moodles_DirtinessSickness_Bad_desc_lvl2 = "SkÄ…pany w brudzie. Ryzyko choroby.",
+    Moodles_DirtinessSickness_Bad_desc_lvl2 = "Sk¹pany w brudzie. Ryzyko choroby.",
     Moodles_DirtinessSickness_Bad_lvl3 = "Ohydny",
-    Moodles_DirtinessSickness_Bad_desc_lvl3 = "Uczucie rozwijajÄ…cych siÄ™ drobnoustrojÃ³w, swÄ™dzenie i odÃ³r. DuÅ¼e ryzyko choroby",
-    Moodles_DirtinessSickness_Bad_lvl4 = "OdraÅ¼ajÄ…cy",
-    Moodles_DirtinessSickness_Bad_desc_lvl4 = "CzystoÅ›Ä‡ i ogÅ‚ada jest tylko wspomnieniem. Ekstremalne ryzyko choroby",
+    Moodles_DirtinessSickness_Bad_desc_lvl3 = "Uczucie rozwijaj¹cych siê drobnoustrojów, swêdzenie i odór. Du¿e ryzyko choroby",
+    Moodles_DirtinessSickness_Bad_lvl4 = "Odra¿aj¹cy",
+    Moodles_DirtinessSickness_Bad_desc_lvl4 = "Czystoœæ i og³ada jest tylko wspomnieniem. Ekstremalne ryzyko choroby",
 }
