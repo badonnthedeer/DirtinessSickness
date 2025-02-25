@@ -1,10 +1,10 @@
 Moodles_RU {
-    Moodles_DirtinessSickness_Bad_lvl1 = "РіСЂСЏР·РЅС‹Р№",
-    Moodles_DirtinessSickness_Bad_desc_lvl1 = "Р·Р°РїСѓС‰РµРЅРЅС‹Р№ РЅРµСЂСЏС…Р°.",
+    Moodles_DirtinessSickness_Bad_lvl1 = "грязный",
+    Moodles_DirtinessSickness_Bad_desc_lvl1 = "запущенный неряха.",
     Moodles_DirtinessSickness_Bad_lvl2 = "Filthy",
-    Moodles_DirtinessSickness_Bad_desc_lvl2 = "РєСѓРїР°Р»СЃСЏ РІ РіСЂСЏР·Рё,СЂРёСЃРє Р·Р°Р±РѕР»РµРІР°РЅРёСЏ!.",
+    Moodles_DirtinessSickness_Bad_desc_lvl2 = "купался в грязи,риск заболевания!.",
     Moodles_DirtinessSickness_Bad_lvl3 = "Soiled",
-    Moodles_DirtinessSickness_Bad_desc_lvl3 = "РјРёРєСЂРѕР±С‹ РїСЂРѕС†РІРµС‚Р°СЋС‚,СЃРёР»СЊРЅС‹Р№ Р·СѓРґ,СЂРёСЃРє Р·Р°Р±РѕР»РµС‚СЊ!.",
-    Moodles_DirtinessSickness_Bad_lvl4 = "РѕС‚РІСЂР°С‚РёС‚РµР»СЊРЅР°СЏ РІРѕРЅСЊ!",
-    Moodles_DirtinessSickness_Bad_desc_lvl4 = "РІС‹ РЅРµ РїРѕРјРЅРёС‚Рµ РєРѕРіРѕ Р±С‹С‚СЊ С‡РёСЃС‚С‹Рј,РІС‹СЃРѕРєРёР№ СЂРёСЃРє Р·Р°Р±РѕР»РµС‚СЊ.",
+    Moodles_DirtinessSickness_Bad_desc_lvl3 = "микробы процветают,сильный зуд,риск заболеть!.",
+    Moodles_DirtinessSickness_Bad_lvl4 = "отвратительная вонь!",
+    Moodles_DirtinessSickness_Bad_desc_lvl4 = "вы не помните кого быть чистым,высокий риск заболеть.",
 }
