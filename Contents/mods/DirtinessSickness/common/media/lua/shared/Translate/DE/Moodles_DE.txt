@@ -1,0 +1,10 @@
+Moodles_DE {
+    Moodles_DirtinessSickness_Bad_lvl1 = "Schmutzig",
+    Moodles_DirtinessSickness_Bad_desc_lvl1 = "Unangenehm schmutzig",
+    Moodles_DirtinessSickness_Bad_lvl2 = "Dreckig",
+    Moodles_DirtinessSickness_Bad_desc_lvl2 = "In Dreck gebadet. Krankheitsgefahr",
+    Moodles_DirtinessSickness_Bad_lvl3 = "Versifft",
+    Moodles_DirtinessSickness_Bad_desc_lvl3 = "Mikroben gedeihen, jucken und gestank. Grosses Krankheitsrisiko",
+    Moodles_DirtinessSickness_Bad_lvl4 = "Widerlich",
+    Moodles_DirtinessSickness_Bad_desc_lvl4 = "Sauberkeit und Höflichkeit sind nur noch eine Erinnerung. Extremes Krankheitsrisiko",
+}

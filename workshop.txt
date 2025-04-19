@@ -11,14 +11,18 @@ description=[*] When each moodle level shows,
 description=[*] and more!
 description=[/list]
 description=
+description=[h1]Translation Credits[/h1]
+description=Thank you for your contribution to Dirtiness Sickness!!
+description=PL: Falcone ( https://steamcommunity.com/id/FalconePL1 )
+description=RU: jora_mahoev2 ( https://steamcommunity.com/id/Jora_Mahoev )
+description=DE: Darnexx ( https://steamcommunity.com/id/deadlygearfenix )
+description=
 description=[hr][/hr]
 description=[h1]A message from the creator[/h1]
 description=Do you really enjoy this mod--or even better--want to build on it? Please consider [url=https://ko-fi.com/badonnthedeer]donating to me[/url]! I'm in definite financial need, so every little bit helps! Thank you.
 description=
 description=[h1]Special Thanks[/h1]
 description=to RU556 for commissioning this mod!
-description=to Falcone for their Polish translation!
-description=to jora_mahoev2 for their Russian translation!
 description=
 description=[quote=Badonn]Please don't copy this mod and upload it as your own! Please also ask if you can use this in a mod pack. If you would like to translate the mod, send me a message or leave a comment and I'll work with you to add it in! This mod is under the MIT License.[/quote]
 tags=Build 41;Build 42;Hardmode;Misc;Multiplayer;Realistic
